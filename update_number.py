@@ -25,7 +25,7 @@ def git_commit():
     date = datetime.now().strftime('%Y-%m-%d')
     commit_message = f"Update number: {date}"
     subprocess.run(['git', 'commit', '-m', commit_message])
-    subprocess.run(['git', 'push', 'origin', 'master'])
+    subprocess.run(['git', 'push', 'origin', 'main'])
 
 
 def main():
